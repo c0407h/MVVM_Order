@@ -12,17 +12,26 @@ class OrdersTVController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        populateOrders()
+        
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+    
+    private func populateOrders() {
+        guard let coffeeOrdersURL = URL(string: "https://warp-wiry-rugby.glitch.me/orders") else {
+            fatalError("URL was incorrect")
+        }
+        
+        let resource = Resource<[Order]>(url: coffeeOrdersURL)
+        
+        OrderService().load(resource: resource) { result in
+            switch result {
+            case .success(let orders):
+                print(orders)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 }
+
+
