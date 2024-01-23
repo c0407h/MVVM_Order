@@ -8,7 +8,14 @@
 
 import UIKit
 
+protocol AddCoffeeOrderDelegate {
+    func addCoffeeOrderViewControllerDidSave(order: Order, controller: UIViewController)
+    func addCoffeeOrderViewControllerDidClose(controller: UIViewController)
+}
+
 class AddOrderViewController: UIViewController {
+    
+    var delegate: AddCoffeeOrderDelegate?
     
     private var vm = AddCoffeeOrderViewModel()
     @IBOutlet weak var tableView: UITableView!
@@ -56,7 +63,13 @@ class AddOrderViewController: UIViewController {
         OrderService().load(resource: Order.create(vm: self.vm)) { result in
             switch result {
             case .success(let order):
-                self.dismiss(animated: true)
+                
+                if let order = order, let delegate = self.delegate {
+                    DispatchQueue.main.async {
+                        delegate.addCoffeeOrderViewControllerDidSave(order: order, controller: self)
+                    }
+                }
+                
             case .failure(let error):
                 print(error)
             }
@@ -65,7 +78,11 @@ class AddOrderViewController: UIViewController {
     }
     
     @IBAction func close(_ sender: Any) {
-        self.dismiss(animated: true)
+        
+        if let delegate = self.delegate {
+            delegate.addCoffeeOrderViewControllerDidClose(controller: self)
+        }
+        
     }
     
 }
