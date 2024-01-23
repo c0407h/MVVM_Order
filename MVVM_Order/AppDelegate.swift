@@ -4,6 +4,9 @@
 //
 //  Created by Chung Wussup on 1/23/24.
 //
+//https://warp-wiry-rugby.glitch.me/orders get
+//https://warp-wiry-rugby.glitch.me/orders post
+//https://warp-wiry-rugby.glitch.me/clear-orders get
 
 import UIKit
 

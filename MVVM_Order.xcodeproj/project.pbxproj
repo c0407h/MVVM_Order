@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		41A14A9B2B5FBBDC00A7A4BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A14A9A2B5FBBDC00A7A4BD /* AppDelegate.swift */; };
 		41A14A9D2B5FBBDC00A7A4BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A14A9C2B5FBBDC00A7A4BD /* SceneDelegate.swift */; };
-		41A14A9F2B5FBBDC00A7A4BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A14A9E2B5FBBDC00A7A4BD /* ViewController.swift */; };
 		41A14AA22B5FBBDC00A7A4BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A14AA02B5FBBDC00A7A4BD /* Main.storyboard */; };
 		41A14AA42B5FBBDD00A7A4BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A14AA32B5FBBDD00A7A4BD /* Assets.xcassets */; };
 		41A14AA72B5FBBDD00A7A4BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A14AA52B5FBBDD00A7A4BD /* LaunchScreen.storyboard */; };
 		41A14AB22B5FBBDD00A7A4BD /* MVVM_OrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A14AB12B5FBBDD00A7A4BD /* MVVM_OrderTests.swift */; };
 		41A14ABC2B5FBBDD00A7A4BD /* MVVM_OrderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A14ABB2B5FBBDD00A7A4BD /* MVVM_OrderUITests.swift */; };
 		41A14ABE2B5FBBDD00A7A4BD /* MVVM_OrderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A14ABD2B5FBBDD00A7A4BD /* MVVM_OrderUITestsLaunchTests.swift */; };
+		41A14ACC2B5FBF4E00A7A4BD /* OrdersTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A14ACB2B5FBF4E00A7A4BD /* OrdersTVController.swift */; };
+		41A14ACE2B5FBF6B00A7A4BD /* AddOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A14ACD2B5FBF6B00A7A4BD /* AddOrderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		41A14A972B5FBBDC00A7A4BD /* MVVM_Order.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_Order.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A14A9A2B5FBBDC00A7A4BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A14A9C2B5FBBDC00A7A4BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		41A14A9E2B5FBBDC00A7A4BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		41A14AA12B5FBBDC00A7A4BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41A14AA32B5FBBDD00A7A4BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41A14AA62B5FBBDD00A7A4BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		41A14AB72B5FBBDD00A7A4BD /* MVVM_OrderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVM_OrderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A14ABB2B5FBBDD00A7A4BD /* MVVM_OrderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_OrderUITests.swift; sourceTree = "<group>"; };
 		41A14ABD2B5FBBDD00A7A4BD /* MVVM_OrderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_OrderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		41A14ACB2B5FBF4E00A7A4BD /* OrdersTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTVController.swift; sourceTree = "<group>"; };
+		41A14ACD2B5FBF6B00A7A4BD /* AddOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,9 @@
 		41A14A992B5FBBDC00A7A4BD /* MVVM_Order */ = {
 			isa = PBXGroup;
 			children = (
+				41A14ACA2B5FBE6C00A7A4BD /* Controllers */,
 				41A14A9A2B5FBBDC00A7A4BD /* AppDelegate.swift */,
 				41A14A9C2B5FBBDC00A7A4BD /* SceneDelegate.swift */,
-				41A14A9E2B5FBBDC00A7A4BD /* ViewController.swift */,
 				41A14AA02B5FBBDC00A7A4BD /* Main.storyboard */,
 				41A14AA32B5FBBDD00A7A4BD /* Assets.xcassets */,
 				41A14AA52B5FBBDD00A7A4BD /* LaunchScreen.storyboard */,
@@ -125,6 +127,15 @@
 				41A14ABD2B5FBBDD00A7A4BD /* MVVM_OrderUITestsLaunchTests.swift */,
 			);
 			path = MVVM_OrderUITests;
+			sourceTree = "<group>";
+		};
+		41A14ACA2B5FBE6C00A7A4BD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				41A14ACB2B5FBF4E00A7A4BD /* OrdersTVController.swift */,
+				41A14ACD2B5FBF6B00A7A4BD /* AddOrderViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41A14A9F2B5FBBDC00A7A4BD /* ViewController.swift in Sources */,
 				41A14A9B2B5FBBDC00A7A4BD /* AppDelegate.swift in Sources */,
+				41A14ACC2B5FBF4E00A7A4BD /* OrdersTVController.swift in Sources */,
 				41A14A9D2B5FBBDC00A7A4BD /* SceneDelegate.swift in Sources */,
+				41A14ACE2B5FBF6B00A7A4BD /* AddOrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
