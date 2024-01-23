@@ -20,6 +20,7 @@
 		41A14AD12B5FD02500A7A4BD /* OrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A14AD02B5FD02500A7A4BD /* OrderService.swift */; };
 		41A14AD42B5FD1F500A7A4BD /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A14AD32B5FD1F500A7A4BD /* Order.swift */; };
 		41A14AD72B5FF12600A7A4BD /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A14AD62B5FF12600A7A4BD /* OrderViewModel.swift */; };
+		41A14AD92B5FF65000A7A4BD /* AddCoffeeOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A14AD82B5FF65000A7A4BD /* AddCoffeeOrderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		41A14AD02B5FD02500A7A4BD /* OrderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderService.swift; sourceTree = "<group>"; };
 		41A14AD32B5FD1F500A7A4BD /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		41A14AD62B5FF12600A7A4BD /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		41A14AD82B5FF65000A7A4BD /* AddCoffeeOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeOrderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				41A14AD62B5FF12600A7A4BD /* OrderViewModel.swift */,
+				41A14AD82B5FF65000A7A4BD /* AddCoffeeOrderViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41A14AD42B5FD1F500A7A4BD /* Order.swift in Sources */,
+				41A14AD92B5FF65000A7A4BD /* AddCoffeeOrderViewModel.swift in Sources */,
 				41A14A9B2B5FBBDC00A7A4BD /* AppDelegate.swift in Sources */,
 				41A14AD12B5FD02500A7A4BD /* OrderService.swift in Sources */,
 				41A14ACC2B5FBF4E00A7A4BD /* OrdersTVController.swift in Sources */,
